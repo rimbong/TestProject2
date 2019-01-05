@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mybatis.article">
+
+<!-- article 읽어오기 -->
+
+	<select id="selectList" parameterType="mvc.model.HBox" resultType="mvc.model.HBox">
+			SELECT * 
+			FROM TB_BD
+			ORDER BY BD_SEQ DESC  LIMIT 0 , 10	
+	</select>
+
+
+
+
+
+
+
+</mapper>
